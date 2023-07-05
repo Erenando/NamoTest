@@ -1,9 +1,31 @@
 <!doctype html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<head>
+    <title>Anime Tierlist</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+
+</head>
+<body>
+<div class="container">
+    <form action="" id='animes'>
+        <div class="alert">Anime Tierlist</div>
+        <div class="inputBox">
+            <input type="text" id="name" placeholder="Anime Name">
+        </div>
+        <div class="inputBox">
+            <input type="text" id="ranking" placeholder="Your rating (0 - 10)">
+        </div>
+        <div class="inputBox">
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script src="assets/scripts/main.js"></script>
+</body>
 </html>
